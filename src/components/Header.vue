@@ -1,8 +1,13 @@
+<script setup>
+    const props = defineProps({
+        darkTheme: Boolean
+    })
+</script>
 <template>
 <!--=============== HEADER ===============-->
 <header class="profile container">
     <!-- Theme button -->
-    <i class="ri-moon-line change-theme" id="theme-button"></i>
+    <i class="ri-moon-line change-theme" :class="darkTheme ? 'ri-sun-fill' : 'ri-moon-line'" id="theme-button" @click="$emit('changeTheme')"></i>
 
     <div class="profile__container grid">
         <div class="profile__data">
