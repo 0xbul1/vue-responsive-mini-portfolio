@@ -13,7 +13,7 @@ app.directive('scroll-reveal', {
       distance: '60px',
       duration: 2500,
       delay: 400,
-    }).reveal(el.childNodes, options || { delay: 200 });
+    }).reveal(el, options || { delay: 200 });
   }
 })
 
