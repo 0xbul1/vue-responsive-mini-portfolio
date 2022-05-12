@@ -15,9 +15,9 @@ const button2Click = () => {
 <template>
   <!--=============== MAIN ===============-->
   <main class="main">
-    <section class="filters container">
+    <section class="filters container" v-scroll-reveal="{delay: 1000}">
       <!--=============== FILTERS TABS ===============-->
-      <ul class="filters__content">
+      <ul class="filters__content" v-scroll-reveal="{delay: 900}">
         <button ref="button" @click="button1Click" class="filters__button"
           :class="currentValue === 0 ? 'filter-tab-active' : ''" data-target="#projects">
           Projects
